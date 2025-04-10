@@ -1,4 +1,13 @@
-Primeiro Commit do Trabalho!
+Segundo Commit do Trabalho!
 
-- Ainda falta fazer a logica do botão de voltar a página.
-- Arrumar o design de algumas coisas.
+Melhorias:
+- Lógica do botão voltar está feita.
+- Melhoria no design.
+
+Fazer pro próximo commit:
+- Falta organizar isso, ta uma bagunça.
+- Fazer alguns ajustes no design.
+- Arrumar a imagem do login que não está aparecendo.
+
+
+

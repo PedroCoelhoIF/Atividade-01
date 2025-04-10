@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class Cadastro extends StatefulWidget {
-  const Cadastro({super.key});
+  final String usuario;
+  const Cadastro({super.key, required this.usuario});
 
   @override
   State<Cadastro> createState() => _CadastroState();
@@ -17,14 +18,18 @@ class _CadastroState extends State<Cadastro> {
   Widget build(BuildContext context) {
     return  Scaffold(
       appBar: AppBar(
-        title: Text("Bem Vindo!")
+        title: Text("Bem-Vindo!"),
+        centerTitle: true,
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.white,
       ),
       body: Container(
         margin: EdgeInsets.all(20),
         padding: EdgeInsets.all(20),
         child: Column(
           children: [
-            Text("Bem vindo!!!"),
+            Text("Olá, ${widget.usuario}",  style: TextStyle(fontSize: 20),),
+            SizedBox(height: 20),
             TextField(
               controller: _nome,
               decoration: InputDecoration(
@@ -118,7 +123,7 @@ class _CadastroState extends State<Cadastro> {
              ),
              SizedBox(height: 20),
              ElevatedButton(onPressed: (){
-                  
+                  Navigator.pop(context);
             },
              child: Text("Voltar" ,
              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.black),

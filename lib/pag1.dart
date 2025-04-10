@@ -68,25 +68,25 @@ class _Pag1State extends State<Pag1> {
                     var usuario = _nomeController.text;
                     var senha = _senhaController.text;
                     if (usuario.isEmpty || senha.isEmpty) {
-      // Se um dos campos estiver vazio
-      showDialog(
-        context: context,
-        builder: (context) => AlertDialog(
-          title: Text("Atenção"),
-          content: Text("Por favor, preencha todos os campos."),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text("OK"),
-            ),
-          ],
-        ),
+                    // Se um dos campos estiver vazio
+                    showDialog(
+                    context: context,
+                    builder: (context) => AlertDialog(
+                    title: Text("Atenção"),
+                    content: Text("Por favor, preencha todos os campos."),
+                    actions: [
+                              TextButton(
+                                  onPressed: () => Navigator.pop(context),
+                                  child: Text("OK"),
+                              ),
+                            ],
+                    ),
       );
     } else if (usuario == "admin" && senha == "1234") {
       // Se os dados estiverem corretos, vai para a próxima tela
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Cadastro()),
+        MaterialPageRoute(builder: (context) => Cadastro(usuario: usuario,)),
       );
     } else {
       // Se os dados estiverem incorretos
