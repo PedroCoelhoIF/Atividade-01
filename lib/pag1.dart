@@ -27,8 +27,8 @@ class _Pag1State extends State<Pag1> {
         child: Column(
           children: [
             const CircleAvatar(
-              radius: 80,
-              backgroundImage: NetworkImage("https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png"),
+              radius: 75,
+              backgroundImage: NetworkImage("https://cdn-icons-png.flaticon.com/512/3541/3541871.png"),
            ),
            SizedBox(height: 30),
             TextField(
@@ -82,7 +82,7 @@ class _Pag1State extends State<Pag1> {
                             ],
                     ),
       );
-    } else if (usuario == "admin" && senha == "1234") {
+    } else if (usuario == "pedro" && senha == "1234") {
       // Se os dados estiverem corretos, vai para a próxima tela
       Navigator.push(
         context,
