@@ -1,13 +1,11 @@
-Segundo Commit do Trabalho!
+Terceiro Commit do Trabalho!
 
 Melhorias:
-- Lógica do botão voltar está feita.
-- Melhoria no design.
+- Consegui resolver o bug que fazia a imagem do icone não aparecer, consegui arrumar escolhendo outro link de imagem,
+provavelmente o que eu estava usando, o servidor estava bloqueando  acesso de apps externos.
+- Comentei mais algumas linhas para ficar mais claro.
 
-Fazer pro próximo commit:
-- Falta organizar isso, ta uma bagunça.
-- Fazer alguns ajustes no design.
-- Arrumar a imagem do login que não está aparecendo.
+
 
 
 
